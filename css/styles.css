@@ -42,13 +42,8 @@ ul {
 
 .header {
   outline: 1px solid tomato;
-  background-color: var(--body-color);
+
   border-bottom: 1px solid #ececec;
-  border-bottom-color: #ececec;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .container {
@@ -137,11 +132,11 @@ ul {
 }
 .email {
   fill: currentColor;
-  margin: 10px;
+  margin-right: 10px;
 }
 .smartfon {
   fill: currentColor;
-  margin: 10px;
+  margin-right: 10px;
 }
 
 .link.tel.email:hover {
@@ -164,7 +159,7 @@ ul {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-
+  height: 600px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -206,6 +201,7 @@ ul {
   font-weight: 700;
   min-width: 216px;
   text-align: center;
+  border: none;
 }
 
 .button:hover,
@@ -380,7 +376,7 @@ img {
 .companies {
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid currentColor;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -390,7 +386,6 @@ img {
 .companies:hover,
 .companies:focus {
   color: var(--button-link);
-  border: 1px solid var(--button-link);
 }
 .company-a,
 .company-b,
@@ -415,6 +410,7 @@ img {
 }
 .info {
   display: flex;
+  align-items: baseline;
 }
 .logo-footer {
   font-family: "Raleway", sans-serif;
@@ -424,8 +420,6 @@ img {
   letter-spacing: 0.03em;
   color: #ffffff;
   margin-bottom: 20px;
-}
-address {
 }
 
 .list-footer {
@@ -562,10 +556,15 @@ ul {
   width: 370px;
 }
 
-.card-list:hover {
+.card-ittem:hover,
+.card-ittem:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
+}
+.card-ittem {
+  text-decoration: none;
+  display: block;
 }
 
 .card-list:nth-child(3n) {
